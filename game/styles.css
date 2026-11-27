@@ -1,0 +1,32 @@
+/* Gobble Dash — page chrome around the canvas. The game itself draws everything. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #2b1a0e;
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+}
+#stage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+#game {
+  display: block;
+  max-width: 100vw;
+  max-height: calc(100vh - 34px);
+  background: #f7c873;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+#hint {
+  margin: 0;
+  color: #e8c99a;
+  font-size: 13px;
+  text-align: center;
+}
